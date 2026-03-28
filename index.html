@@ -1,0 +1,16 @@
+import random
+
+number = random.randint(1, 100)
+count = 0
+
+while True:
+    guess = int(input("Nhập số (1-100): "))
+    count += 1
+
+    if guess == number:
+        print("🎉 Bạn thắng sau", count, "lần đoán!")
+        break
+    elif guess < number:
+        print("📉 Lớn hơn!")
+    else:
+        print("📈 Nhỏ hơn!")
